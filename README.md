@@ -11,7 +11,7 @@
 ![screenshot1](https://github.com/takagiyuusuke/Tokyu/assets/142160956/f205901f-f46b-43ed-85ad-002c1bbb6fb4)
 使い方は簡単！  画面上部の出発駅と到着駅を入力するだけ！  
 両方の入力を終えると自動で経路と所要時間が計算されて表示されます。  
-[こちら](https://tokyu.vercel.app/) から体験できます。(https://tokyu.vercel.app/)
+[こちら](https://tokyu.vercel.app/) から遊んでみてください。(https://tokyu.vercel.app/)
 
 ## 補助機能のいくつか
 1.駅名入力時に候補駅が一定数以下になればボタンが表示されますので押してください。(日本語入力してください)  
@@ -22,6 +22,13 @@
 ## Dijkstraのアルゴリズムのこと
 Dijkstraのアルゴリズムはグラフの頂点数が $n$ である際に $O(n)$ で探索を終えることができるアルゴリズムです。  
 当ページでは頂点数が100程度なので、遠い駅間を指定したときでも高速に最短経路の探索が行われることが確認できるはずです。
+
+### 使用技術
+このプロジェクトは、以下の技術を使用して開発しました。　　
+
+-React  
+-TypeScript  
+-Material-UI  
 
 
 # Getting Started with Create React App
