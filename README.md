@@ -24,11 +24,11 @@ Dijkstraのアルゴリズムはグラフの頂点数が $n$ である際に $O(
 当ページでは頂点数が100程度なので、遠い駅間を指定したときでも高速に最短経路の探索が行われることが確認できるはずです。
 
 ### 使用技術
-このプロジェクトは、以下の技術を使用して開発しました。　　
+このプロジェクトは、以下を使用して開発しました。　　
 
--React  
--TypeScript  
--Material-UI  
+- React  
+- TypeScript  
+- Material-UI  
 
 
 # Getting Started with Create React App
