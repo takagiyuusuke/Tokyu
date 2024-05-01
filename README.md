@@ -1,3 +1,15 @@
+# Overview
+
+情報数学で有名なDijkstraのアルゴリズムを実際に使って可視化してみましょう。  
+路線図を有向グラフとみなすことが可能なので、各辺に重み(所要時間)を与えました。
+  ※乗り換えや列車種別の違いによる所要時間の変化には対応していません。  
+  ※あくまで仮想の所要時間を表しています。
+これは実際の画面です。
+![screenshot1](https://github.com/takagiyuusuke/Tokyu/assets/142160956/f205901f-f46b-43ed-85ad-002c1bbb6fb4)
+使い方は簡単！  画面上部の出発駅と到着駅を入力するだけ！
+入力の補助も充実させています。候補駅が一定数以下になればボタンが表示されますので押してください。
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
