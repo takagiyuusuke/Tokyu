@@ -116,7 +116,7 @@
 .line11 {
   position: absolute;
   left: 110px;
-  top:789px;
+  top: 789px;
   width: 160px;
   background-color: blue;
 }
@@ -178,8 +178,8 @@
   left: 950px;
   top: 530px;
   width: 170px;
-  background-color:skyblue;
-  transform: rotate(30deg)
+  background-color: skyblue;
+  transform: rotate(30deg);
 }
 .line20 {
   position: absolute;
@@ -211,9 +211,16 @@
 }
 
 .station {
-  width: 15px; /* 直径 - 必要に応じて調整 */
-  height: 15px; /* 直径 - 必要に応じて調整 */
-  background-color: whitesmoke; /* アイコンの色 - 必要に応じて調整 */
+  width: 15px;
+  height: 15px;
+  background-color: whitesmoke;
   border-radius: 50%; /* 丸い形状にするために必要 */
   border: solid 2px black;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
