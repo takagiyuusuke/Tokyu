@@ -10,7 +10,7 @@
   
 これは実際の画面です。
 ![screenshot1](https://github.com/takagiyuusuke/Tokyu/assets/142160956/f205901f-f46b-43ed-85ad-002c1bbb6fb4)
-使い方は簡単！  <u>画面上部の出発駅と到着駅を入力するだけ！</u>  
+使い方は簡単！  画面上部の出発駅と到着駅を入力するだけ！  
 両方の入力を終えると自動で経路と所要時間が計算されて表示されます。  
 [こちら](https://tokyu.vercel.app/) から遊んでみてください。(https://tokyu.vercel.app/)
 
