@@ -99,6 +99,32 @@ function App() {
           stationNumber={stations[i - 1][3] as string[]}
         />
       ))}
+
+      <div style={{ position: "absolute", top: 260, left: 20, width: 900 }}>
+        {dep && ter ? (
+          <div>
+            <h2>
+              {stations[dep - 1][1]}→{stations[ter - 1][1]}{" "}
+              <span style={{ fontSize: 15 }}>所要時間</span>
+              {time}分
+            </h2>
+            <h5>
+              経由:
+              {vias.map((e, index) => (
+                <>
+                  <span>{index ? " → " : " "}</span>
+                  <span style={{ whiteSpace: "nowrap" }}>
+                    {stations[e - 1][1]}{" "}
+                  </span>
+                </>
+              ))}
+            </h5>
+          </div>
+        ) : (
+          <div></div>
+        )}
+      </div>
+
       <div className="header">
         <div className="depbox" style={{ backgroundColor: "skyblue" }}>
           <h4 className="dep">出発駅</h4>
@@ -186,21 +212,6 @@ function App() {
             </div>
           )}
         </div>
-      </div>
-
-      <div style={{ position: "absolute", top: 260, left: 20, width: 900 }}>
-        {dep && ter ? (
-          <div>
-            <h2>
-              {stations[dep - 1][1]}→{stations[ter - 1][1]}{" "}
-              <span style={{ fontSize: 15 }}>所要時間</span>
-              {time}分
-            </h2>
-            <h5>経由: {vias.map((e) => stations[e - 1][1]).join(" → ")}</h5>
-          </div>
-        ) : (
-          <div></div>
-        )}
       </div>
     </div>
   );
