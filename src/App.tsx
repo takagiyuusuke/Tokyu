@@ -8,7 +8,6 @@ import { position, pos, array } from "./position";
 import { Linebox } from "./line";
 import { Button } from "./components/utils/button";
 import { TextField } from "./components/utils/input";
-import { dividerClasses } from "@mui/material";
 
 function App() {
   const [a, setA] = useState<string>("");
@@ -148,8 +147,17 @@ function App() {
             width="222px"
             height="35px"
           ></TextField>
-          {a && candidate.length !== 0 && candidate.length <= 5 && (
-            <div className="dep">
+
+          {a && candidate.length !== 0 && candidate.length <= 10 && (
+            <div
+              className="dep"
+              style={{
+                overflowX: "hidden",
+                whiteSpace: "nowrap",
+                margin: "3px",
+                height: "58px",
+              }}
+            >
               もしかして
               {candidate.map((e) => (
                 <Button
@@ -191,8 +199,16 @@ function App() {
             width="222px"
             height="35px"
           ></TextField>
-          {b && candidate2.length !== 0 && candidate2.length <= 5 && (
-            <div className="dep">
+          {b && candidate2.length !== 0 && candidate2.length <= 10 && (
+            <div
+              className="dep"
+              style={{
+                overflowX: "hidden",
+                whiteSpace: "nowrap",
+                margin: "3px",
+                height: "58px",
+              }}
+            >
               もしかして
               {candidate2.map((e) => (
                 <Button
